@@ -1,0 +1,106 @@
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}/* global declarations */
+html {
+	font:125% "Lucida Grande",Tahoma,Helvetica,Arial,Lucida,sans-serif;
+	height:100%;
+	color:#000;
+	overflow: -moz-scrollbars-vertical;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+body {
+	font-size:50%;
+	color:#444444;
+	height:100%;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAM0lEQVQIW2NkwAMYYXL/Gf7/R1bHyMDICJEEyTD+ZwAJwLkkSeI0FsVdQPNBfLiDsDkaAOS2FwiVqd87AAAAAElFTkSuQmCC); */
+}
+
+div#logo{background:transparent;}
+
+a:link{text-decoration: none; color: #0084b4;}
+a:visited{text-decoration: none; color: #0084b4;}
+a:hover {text-decoration: underline; color: orange;}
+a:active {text-decoration: none; color: #a7a7a7;}
+
+hr {border:none; height:1px; background-color:fuchsia; width:680px; margin:2px 0;}
+
+#wrapper {
+	position:relative;
+	max-width:800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*
+	Orange: #ffb117;
+	Grey: #f7f7f7;
+	Light grey: #3d3d3d
+	Lime: lime;
+	Fuchsia: #ff00ff;
+*/
+div#logo {position:relative; padding: 10px 0px; background:white;}
+div#top-layer {position:absolute; left: 6px; top: 2px; z-index:21;}
+div#offset1-layer {position:absolute; left: 4px; top: 4px; z-index:20;}
+div#offset2-layer {position:absolute; left: 2px; top: 6px; z-index:19;}
+div.letter {float:left; margin-right:12px; margin-top:20px; border:solid 0px #00f;}
+div.s {margin-left: 0px;}
+div.b {margin-left: 30px;}
+div.v {margin-left: -10px;}
+div.u {margin-left: -8px;}
+div.row {clear:both; padding-top:2px;}
+div.sq {display:block; width:5px; height:7px; float:left; margin-left:2px; border:solid 2px transparent;}
+
+/*  */
+div.front {border:solid 2px #a7a7a7; background:white; opacity:1;}
+div#offset1-layer div.front {border:solid 2px #d7d7d7; background:lime; opacity:1;}
+div#offset2-layer div.front {border:solid 2px #000000; background:black; opacity:1;}
+
+div#top-layer div.logo div.front {border-color: magenta;}
+div#offset1-layer div.logo div.front {border-color: lime;}
+div.logo {cursor: pointer;}
+
+ul#main-menu, ul#footer-list{margin-left:20px;}
+ul#main-menu li, ul#footer-list li {float:left;margin-left:20px; color: green;}
+ul#main-menu li:first-child, ul#footer-list li:first-child {margin-left:0px;}
+
+div#main-wrapper {margin: 0px 0px;}
+h1 {font: 2.5em Arial,Verdana; font-weight:bold; color:black; margin-top: 20px;}
+header {margin-top: 20px;}
+header>h1 {margin-top:0px}
+h2 {font: 1.7em Arial,Verdana; font-weight:bold; color:black; margin-top: 20px;}
+h3 {font: 1.3em Arial,Verdana; font-weight:bold; color:black; margin-top: 12px;}
+p{font-size:1.3em; margin-top:12px;}
+p:first-child, h2+p, h3+p{margin-top:0px;}
+p.brodtext{margin-top:12px;}
+cite{display: block;margin-top:8px;font-family:Georgia; font-size: 24px;}
+li{font-size: 1.3em;}
+
+#news {margin:0px 0px 20px;}
+.news-item {margin-bottom:10px;}
+.news-date {float:left;}
+.news-content{float:left; width:620px; margin-left:5px;}
+
+li p {font-size: 1.0em;}
+ul.bullet, ol {margin: 12px 0 0 20px;}
+ul.bullet>li {list-style:square; margin: 6px 0 0 20px;}
+
+ol>li {list-style: decimal; margin: 6px 0 0 20px;}
+strong {color: magenta;}
+
+div#footer {bottom: 0px; width: 100%; margin: 20px 0px 14px 0px; text-align: left; color: #a7a7a7;}
+div#footer p {font-size: 1.0em; margin-top: 6px;}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 596px){
+	div#top-layer div.logo div.front {border-color: orange;}
+	div#offset1-layer div.logo div.front {border-color: lime;}
+}
+
+@media only screen and (max-width: 620px) {
+	div#top-layer div.logo div.front {border-color: orange;}
+	div#offset1-layer div.logo div.front {border-color: lime;}
+}
