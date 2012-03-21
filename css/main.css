@@ -98,7 +98,8 @@ div#footer p {font-size: 1.0em; margin-top: 6px;}
 
 @media only screen and (max-width: 720px) {
 	div#logo { display: none; }
-	div#header { display: block; height: 56px; margin-left: 20px; }
+	div#header { display: block; height: 56px; margin-left: 10px; }
+	span#logo-name { font-family: 'Georgia'; font-size: 38px; color: black; position: absolute; top: 4px; left: 70px; }
 	
 	div#logo-icon { position: relative; }
 	div#icon-top-layer {position:absolute; left: 6px; top: 2px; z-index:21;}
