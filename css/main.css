@@ -111,6 +111,7 @@ div#footer p {font-size: 1.0em; margin-top: 6px;}
 	div#icon-offset1-layer div.front {border:solid 2px lime; background:white; opacity:1;}
 	div#icon-offset2-layer div.front {border:solid 2px black; background:white; opacity:1;}
 	
+	ul#news { margin: 2px; }
 	.news-date { font-weight: bold; float: none; }
 	.news-content { margin-left: 0px; width:auto; float: none; }
 }
