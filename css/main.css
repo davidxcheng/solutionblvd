@@ -86,7 +86,7 @@ ul.bullet>li {list-style:square; margin: 6px 0 0 20px;}
 ol>li {list-style: decimal; margin: 6px 0 0 20px;}
 strong {color: magenta;}
 
-div#footer {bottom: 0px; width: 100%; margin: 20px 0px 14px 0px; text-align: left; color: #a7a7a7;}
+div#footer {bottom: 0px; width: 100%; margin: 20px 0px 14px 0px; text-align: left; font-family: Tahoma; color: #a7a7a7;}
 div#footer p {font-size: 1.0em; margin-top: 6px;}
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
@@ -98,8 +98,8 @@ div#footer p {font-size: 1.0em; margin-top: 6px;}
 
 @media only screen and (max-width: 720px) {
 	div#logo { display: none; }
-	div#header { display: block; height: 56px; margin-left: 10px; }
-	span#logo-name { font-family: 'Georgia'; font-size: 38px; color: black; position: absolute; top: 4px; left: 70px; }
+	div#header { display: block; height: 56px; margin: 2px 0 0 10px; }
+	span#logo-name { font-family: 'Yanone Kaffeesatz'; text-transform: uppercase; font-size: 46px; color: #a7a7a7; position: absolute; top: -4px; left: 70px; }
 	
 	div#logo-icon { position: relative; }
 	div#icon-top-layer {position:absolute; left: 6px; top: 2px; z-index:21;}
@@ -113,5 +113,6 @@ div#footer p {font-size: 1.0em; margin-top: 6px;}
 	
 	ul#news { margin: 2px; }
 	.news-date { font-weight: bold; float: none; }
+	.news-date span { display: none; }
 	.news-content { margin-left: 0px; width:auto; float: none; }
 }
