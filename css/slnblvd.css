@@ -27,6 +27,7 @@ p { font: 12px Arial; }
 #top-bar { position: fixed; width: 100%; height: 44px; z-index: 100; background-color: black; }
 #nav-wrapper { max-width: 800px; margin: 0 auto; }
 #nav li { 
+	display: none;
 	float: left; 
 	color: white;
 	font: 24px Arial;
@@ -55,7 +56,7 @@ p { font: 12px Arial; }
 	box-shadow: -3px 3px 0 lime, -4px 6px 0 black, -14px 14px 0px -8px black;
 }
 
-#logo { display: inline-block; margin-left: 78px; }
+#logo { display: inline-block; margin: 8px 0 8px 82px; }
 #logo-sqoosh { display: inline-block;}
 #logo-name { 
 	font: 104px 'Yanone Kaffeesatz'; text-transform: uppercase; color: black; 
@@ -69,7 +70,7 @@ p { font: 12px Arial; }
 	background-color: black;
 	color: white;
 	font-size: 24px;
-	margin: 8px 0;
+	margin: 12px 0;
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 3px;
