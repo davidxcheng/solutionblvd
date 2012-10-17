@@ -106,9 +106,17 @@ a:hover, a:active { text-decoration: none; color: magenta; }
 	}
 	h1 { font-size: 26px; text-shadow: none; }
 	h2 { font-size: 20px; text-shadow: none; }
+	.neg-space {
+		background-color: black;
+		color: white;
+		font-size: 20px;
+		margin: 12px 0;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 1px;
+	}
 	.skill-box { float: none; width: auto; text-align: center; display: block; }
 	.contact { margin: 40px 0 4px; }
 	.contact a:link, .contact a:visited { color: magenta; }
-	.neg-space { display: none; }
 	#footer { position: static; background-color: white; font: 10px Arial; color: #a7a7a7; text-align: center; width: 320px; }
 }
