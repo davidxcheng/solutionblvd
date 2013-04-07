@@ -1,5 +1,4 @@
 (function(doc, slnblvd) {
-	// 
 	slnblvd.reveal = function () {
 		var el = doc.getElementById('email');
 
@@ -18,4 +17,4 @@
 		// < ie9 dont have addEventListener (and don't get to see adr)
 		document.addEventListener('DOMContentLoaded', slnblvd.reveal, false);
 	}
-})(document, {});
+})(document, document.slnblvd || {});
