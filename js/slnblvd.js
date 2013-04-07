@@ -1,14 +1,21 @@
-/*
-	Created:	2010-09-24
-	Author:		David Cheng, Solution Blvd AB
-*/
+(function(doc, slnblvd) {
+	// 
+	slnblvd.reveal = function () {
+		var el = doc.getElementById('email');
 
-$(document).ready(function() {
-	// Link to startpage.
-	$('.logo').live('click', function(e){
-			e.preventDefault();
-			document.location = '/index.html';
-		});
+		if (el && el.rel){
+			var adr = el.rel.replace('//', '@').replace(/\//g, '.');
+			el.href = 'mailto:' + adr;
+			el.innerText = adr;
+		}
+	};
 
-	$('a.email').nospam({ replaceText: true, filterLevel: 'low' });
-});
+	if (doc.readyState == 'complete') {
+		// just in case DOMContentLoaded has already been fired
+		slnblvd.reveal();
+	}
+	else if (doc.addEventListener) {
+		// < ie9 dont have addEventListener (and don't get to see adr)
+		document.addEventListener('DOMContentLoaded', slnblvd.reveal, false);
+	}
+})(document, {});
