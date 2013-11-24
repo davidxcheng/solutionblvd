@@ -1,0 +1,35 @@
+h1 {
+	color: gray;
+	text-shadow: none;
+}
+
+h1 > b {
+	color: black;
+	font-weight: normal;
+}
+
+.layer {
+	/*border: 3px solid black;*/
+	text-align: center;
+	padding: 10px;
+	margin: 4px 0;
+	font: normal 32px Courier, monospace;
+}
+
+.glue {
+	font: normal 20px Courier, monospace;
+	color: gray;
+	text-align: center;
+}
+
+/*.app { border-color: red; }
+.trans { border-color: #f5b901; }
+.net { border-color: lime; }
+.link {
+	color: black;
+	background-color: gray;
+}
+.phy {
+	color: white;
+	background-color: black;
+}*/
