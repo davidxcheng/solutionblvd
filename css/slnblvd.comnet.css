@@ -8,28 +8,28 @@ h1 > b {
 	font-weight: normal;
 }
 
-.layer {
-	/*border: 3px solid black;*/
+#layers {
+	width: 300px;
+	font-family: Courier, monospace;
+	font-weight: normal;
 	text-align: center;
+	float:left;
+}
+
+.layer {
 	padding: 10px;
 	margin: 4px 0;
-	font: normal 32px Courier, monospace;
+	font-size: 32px;
+	cursor: pointer;
 }
 
 .glue {
-	font: normal 20px Courier, monospace;
+	font-size: 20px;
 	color: gray;
-	text-align: center;
 }
 
-/*.app { border-color: red; }
-.trans { border-color: #f5b901; }
-.net { border-color: lime; }
-.link {
-	color: black;
-	background-color: gray;
+#info {
+	padding-top: 24px;
+	font-family: Courier, monospace;
+	float: left;
 }
-.phy {
-	color: white;
-	background-color: black;
-}*/
