@@ -38,7 +38,7 @@ a.cto:hover, a.cto:active { text-decoration: none; color: lime; }
 	margin: 10px 30px 0;
 }
 
-#site-content {
+#site-content, main {
 	position: relative;
 	top: 44px;
 	max-width:820px;

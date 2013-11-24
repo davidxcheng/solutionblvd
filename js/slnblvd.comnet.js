@@ -1,35 +1,45 @@
 (function() {
 	var layers = {
 		application: {
-			protocols: ['http', 'dns', 'smtp'],
-			'unit of data': 'message'
+			displayName: 'Application',
+			protocols: ['HTTP', 'DNS', 'SMTP'],
+			'unit of data': 'Message'
 		},
 		transport: {
-			protocols: ['tcp', 'udp'],
-			'unit of data': 'segment'
+			displayName: 'Transport',
+			protocols: ['TCP', 'UDP'],
+			'unit of data': 'Segment'
 		},
 		network: {
-			protocols: ['ip'],
-			'unit of data': 'packet'
+			displayName: 'Network',
+			protocols: ['IP'],
+			'unit of data': 'Packet'
 		},
 		link: {
-			protocols: ['ethernet', '802.11'],
-			'unit of data': 'frame'
+			displayName: 'Data Link',
+			protocols: ['Ethernet', '802.11'],
+			'unit of data': 'Frame'
 		},
 		physical: {
-			protocols: [],
-			'unit of data': 'bit'
+			displayName: 'Physical',
+			protocols: ['?'],
+			'unit of data': 'Bit'
 		}
 	};
 
 	var $ = (function(id) {	return document.getElementById(id);	}),
+		infoEl = $('info'),
+		titleEl = $('title'),
 		protocolsEl = $('protocols'),
 		unitEl = $('unit');
 
 	$('layers').addEventListener('mouseover', function(e) {
 		if (e.target.classList && e.target.classList[0] == "layer") {
-			protocolsEl.innerText = layers[e.target.id].protocols.join(", ");
-			unitEl.innerText = layers[e.target.id]["unit of data"];
+			var layer = layers[e.target.id];
+			infoEl.classList.remove("hide");
+			titleEl.innerHTML = "The <b>" + layer.displayName + "</b> Layer";
+			protocolsEl.innerText = layer.protocols.join(", ");
+			unitEl.innerText = layer["unit of data"];
 		}
 	});
 })();

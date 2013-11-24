@@ -1,12 +1,15 @@
 h1 {
 	color: gray;
 	text-shadow: none;
+	margin-bottom: 20px;
 }
 
-h1 > b {
+h1 > b, h2 > b {
 	color: black;
 	font-weight: normal;
 }
+
+h3 { font-size: 20px; }
 
 #layers {
 	width: 300px;
@@ -29,7 +32,11 @@ h1 > b {
 }
 
 #info {
-	padding-top: 24px;
-	font-family: Courier, monospace;
 	float: left;
+	padding-top: 10px;
+	margin-left: 20px;
 }
+
+#info > p { font-size: 20px; margin-bottom: 20px; }
+
+.hide { display: none; }
